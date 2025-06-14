@@ -22,21 +22,13 @@ Aplicativo Android para cadastro e listagem de estados brasileiros, utilizando *
 
 ## 🖼 **Telas do Aplicativo**
 
-### 1. Tela Banco de Dados OFF (VM Desligada)
-![Tela OFF](/Prints/tela_dboff.png)
+| Banco OFF | Banco ON | Lista Estados |
+|-----------|----------|---------------|
+| ![OFF](/Prints/tela_dboff.png) | ![ON](/Prints/tela_dbon.png) | ![Lista](/Prints/tela_estados.png) |
 
-### 2. Tela Banco de Dados Online
-![Tela ON](/Prints/tela_dbon.png)
-
-### 3. Lista de Estados
-![Lista](/Prints/tela_estados.png)
-
-### 3. MySQL
-![MySQL Workbench da VM](/Prints/mysql_workbench.png)
-
-### 3. VM da Azure
-![VM da Microsoft Azure](/Prints/vm_azure.png)
----
+| MySQL Workbench | VM Azure |
+|-----------------|----------|
+| ![MySQL](/Prints/mysql_workbench.png) | ![Azure](/Prints/vm_azure.png) |
 
 ## ⚙ **Configuração**
 
