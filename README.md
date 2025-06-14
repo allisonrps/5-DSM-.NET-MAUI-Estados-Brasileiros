@@ -1,1 +1,61 @@
-# 5-DSM-.NET-MAUI-Estados-Brasileiros
+# 🚀 **Estados Brasileiros - .NET MAUI + MySQL (Azure VM)**
+
+Aplicativo Android para cadastro e listagem de estados brasileiros, utilizando **.NET MAUI** e armazenando dados em um **banco MySQL hospedado em uma VM Azure**.
+
+---
+
+## 📌 **Funcionalidades**
+✔ Cadastro de estados (Nome, Sigla, URL da bandeira)  
+✔ Listagem dinâmica dos estados  
+✔ Armazenamento em MySQL na nuvem (Azure VM)  
+✔ Validação básica de formulário  
+
+---
+
+## 🛠 **Tecnologias**
+- C# .NET MAUI 8.0+
+- Android
+- MySQL 8.0
+- Azure Virtual Machine (Ubuntu Server)
+
+---
+
+## 🖼 **Telas do Aplicativo**
+
+### 1. Tela Banco de Dados OFF (VM Desligada)
+![Tela OFF](/Prints/tela_dboff.png)
+
+### 2. Tela Banco de Dados Online
+![Tela ON](/Prints/tela_dbon.png)
+
+### 3. Lista de Estados
+![Lista](/Prints/tela_estados.png)
+
+### 3. MySQL
+![MySQL Workbench da VM](/Prints/mysql_workbench.png)
+
+### 3. VM da Azure
+![VM da Microsoft Azure](/Prints/vm_azure.png)
+---
+
+## ⚙ **Configuração**
+
+### Pré-requisitos
+- Visual Studio 2022 (com workload MAUI)
+- Máquina Virtual Azure com:
+  - MySQL Server instalado
+  - Porta 3306 liberada
+  - Usuário/Senha configurados
+
+### Banco de Dados
+```sql
+CREATE DATABASE Estados;
+
+USE Estados;
+
+CREATE TABLE Estados (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    sigla CHAR(2) NOT NULL,
+    url_bandeira VARCHAR(255),
+);
