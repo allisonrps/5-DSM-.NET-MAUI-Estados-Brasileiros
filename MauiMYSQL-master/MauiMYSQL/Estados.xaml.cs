@@ -108,7 +108,7 @@ namespace MauiMYSQL
                 {
                     if (sucesso)
                     {
-                        // Add new item directly instead of reloading everything
+                        // Adiciona novo item
                         listaEstados.Add(new Estado { nome = nome, sigla = sigla, bandeira_url = bandeira });
 
                         txtNome.Text = string.Empty;
